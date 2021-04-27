@@ -25,6 +25,7 @@ function createRollupConfig({projectName, port}) {
       babel({
         exclude: "node_modules/**",
         babelHelpers: 'runtime',
+        configFile: resolve(__dirname, 'babel.config.json')
       }),
       replace({
         "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
