@@ -1,11 +1,8 @@
-import merge from 'lodash.mergewith'
-import path from 'path'
+const { createRollupConfig } = require(require.resolve('../../rollup.config.js'))
 
-const { createRollupConfig } = require(path.resolve('../../','./rollup.config.js'))
+const config = createRollupConfig({
+  projectName: 'primary-nav',
+  port: '8888',
+})
 
-export default merge(
-  createRollupConfig({
-    projectName: 'primary-nav',
-    port: '8888',
-  })
-)
+export default config

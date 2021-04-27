@@ -7,6 +7,6 @@
   "scripts": {
     "build": "lerna run build --stream",
     "start": "lerna run start --stream",
-    "kill": "npx kill-port 8888 8886 8887 9000"
+    "kill": "npx kill-port 8888 8886 8887 9000 35886 35887 35888 35900"
   }
 }

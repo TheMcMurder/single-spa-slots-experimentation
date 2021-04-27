@@ -3,11 +3,7 @@ import ReactDOM from 'react-dom'
 import singleSpaReact from 'single-spa-react'
 
 function PrimaryNav () {
-  return (
-    <div>
-      Primary-nav
-    </div>
-  )
+  return (<div>Primary Navigation</div>)
 }
 
 const reactLifecycles = singleSpaReact({
