@@ -1,0 +1,24 @@
+{
+  "name": "root-config",
+  "version": "0.0.0",
+  "author": "Justin McMurdie <mcmurdiej@gmail.com>",
+  "homepage": "https://github.com/TheMcMurder/single-spa-slots-experimentation#readme",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMcMurder/single-spa-slots-experimentation.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/TheMcMurder/single-spa-slots-experimentation/issues"
+  }
+}
