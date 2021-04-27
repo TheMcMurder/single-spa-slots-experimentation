@@ -1,6 +1,7 @@
+import { name } from 'app-2'
+console.log('name', name)
 // import { registerApplication, start } from "single-spa";
 // import * as isActive from "./activity-functions";
-console.log('yolo')
 
 // registerApplication(
 //   "@react-mf/navbar",

@@ -47,6 +47,10 @@ function createRollupConfig({projectName, port}) {
             "rxjs/operators",
             "lodash",
             "single-spa",
+            "primary-nav",
+            "app-1",
+            "app-2",
+            "root-config",
           ].includes(id) || /^jm_/.test(id),
   };
 }

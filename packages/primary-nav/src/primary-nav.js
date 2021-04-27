@@ -1,7 +1,1 @@
-'use strict';
-
-module.exports = primaryNav;
-
-function primaryNav() {
-    // TODO
-}
+export const name = 'primary-nav'
