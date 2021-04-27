@@ -1,6 +1,17 @@
-const path = require('path')
+import merge from 'lodash.mergewith'
+import emitEJS from 'rollup-plugin-emit-ejs'
+import path from 'path'
+
 const { createRollupConfig } = require(path.resolve('../../','./scripts/rollup.config.js'))
 
-module.exports = createRollupConfig({
-  projectName: 'root-config'
-})
+export default merge(
+  createRollupConfig({
+    projectName: 'root-config',
+    port: '9000',
+  }),
+  {
+    plugins: [emitEJS({
+      src: 'src',
+    })]
+  }
+)

@@ -6,7 +6,7 @@ const { babel } = require("@rollup/plugin-babel");
 const serve = require('rollup-plugin-serve');
 const livereload = require('rollup-plugin-livereload');
 
-function createRollupConfig({projectName}) {
+function createRollupConfig({projectName, port}) {
   const outputPath = resolve(process.cwd(), `dist`)
   const production = !process.env.ROLLUP_WATCH;
   return {
@@ -33,6 +33,7 @@ function createRollupConfig({projectName}) {
           "Access-Control-Allow-Origin": "*",
         },
         contentBase: 'dist',
+        port,
       }),
       !production && livereload({
         watch: outputPath,

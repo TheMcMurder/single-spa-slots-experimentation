@@ -1,7 +1,23 @@
-'use strict';
+// import { registerApplication, start } from "single-spa";
+// import * as isActive from "./activity-functions";
+console.log('yolo')
 
-module.exports = rootConfig;
+// registerApplication(
+//   "@react-mf/navbar",
+//   () => System.import("@react-mf/navbar"),
+//   isActive.navbar
+// );
 
-function rootConfig() {
-    // TODO
-}
+// registerApplication(
+//   "@react-mf/people",
+//   () => System.import("@react-mf/people"),
+//   isActive.people
+// );
+
+// registerApplication(
+//   "@react-mf/planets",
+//   () => System.import("@react-mf/planets"),
+//   isActive.planets
+// );
+
+// start();
