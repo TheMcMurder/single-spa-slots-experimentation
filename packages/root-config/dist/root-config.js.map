@@ -1,0 +1,1 @@
+{"version":3,"file":"root-config.js","sources":["../src/root-config.js"],"sourcesContent":["'use strict';\n\nmodule.exports = rootConfig;\n\nfunction rootConfig() {\n    // TODO\n}\n"],"names":["rootConfig"],"mappings":";;;;;;;4BAEc,sBAAGA;;YAEjB,SAASA,UAAT,GAAsB;;;;;;;"}
