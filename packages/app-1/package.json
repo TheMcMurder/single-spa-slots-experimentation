@@ -10,7 +10,7 @@
     "url": "git+https://github.com/TheMcMurder/single-spa-slots-experimentation.git"
   },
   "scripts": {
-    "start": "rollup -c -w",
+    "start": "rollup -c ./rollup.config.js -w",
     "build": "rimraf dist && rollup -c ./rollup.config.js --environment NODE_ENV:production",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
