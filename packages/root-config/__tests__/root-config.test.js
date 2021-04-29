@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const rootConfig = require('..');
+const rootConfig = require('..')
 
 describe('root-config', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})
