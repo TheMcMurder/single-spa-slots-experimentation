@@ -31,6 +31,22 @@ function returnNodeIfExistsOrCreate(id, nodeType = 'div', parentNode) {
   }
 }
 
+function randomPromise() {
+  return new Promise((r) => {
+    setTimeout(() => {
+      console.log('Tasks mounting')
+      r()
+    }, randomWait())
+  })
+
+}
+
+function randomWait (min = 400, max = 1500) {
+  let num = Math.random() * (max - min) + min;
+
+  return Math.floor(num);
+};
+
 export const bootstrap = [reactLifecycles.bootstrap]
-export const mount = [reactLifecycles.mount]
+export const mount = [randomPromise, reactLifecycles.mount]
 export const unmount = [reactLifecycles.unmount]

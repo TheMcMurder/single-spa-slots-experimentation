@@ -16,7 +16,7 @@ registerApplication(
 registerApplication(
   'tasks',
   () => System.import('tasks'),
-  (location) => location.pathname.startsWith('/tasks'),
+  (location) => location.pathname.startsWith('/tasks') || location.pathname.includes('/tasks/'),
 )
 
 bootstrapSPA().then(() => {
