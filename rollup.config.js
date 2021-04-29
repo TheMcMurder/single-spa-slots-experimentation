@@ -48,6 +48,7 @@ function createRollupConfig({ projectName, port }) {
           },
           contentBase: 'dist',
           port,
+          historyApiFallback: projectName === 'root-config' ? true : false,
         }),
       !production &&
         livereload({
