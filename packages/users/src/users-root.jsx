@@ -6,7 +6,7 @@ export default function TasksRoot() {
     <div>
       <UserSecondaryNav />
       <Router basename="/users">
-        <Route path='/settings'>
+        <Route path="/settings">
           <Settings />
         </Route>
       </Router>

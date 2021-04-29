@@ -11,7 +11,7 @@ export default function TasksRoot() {
           <TaskList />
         </Route>
         <Route path="/tasks/settings">
-          <TaskSettings/>
+          <TaskSettings />
         </Route>
         <Route path="/users/tasks/:userId">
           <TaskList />
@@ -21,6 +21,6 @@ export default function TasksRoot() {
   )
 }
 
-function TaskSettings () {
-  return (<div>TaskSettings</div>)
+function TaskSettings() {
+  return <div>TaskSettings</div>
 }
