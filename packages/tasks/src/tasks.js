@@ -38,14 +38,13 @@ function randomPromise() {
       r()
     }, randomWait())
   })
-
 }
 
-function randomWait (min = 400, max = 1500) {
-  let num = Math.random() * (max - min) + min;
+function randomWait(min = 400, max = 1500) {
+  let num = Math.random() * (max - min) + min
 
-  return Math.floor(num);
-};
+  return Math.floor(num)
+}
 
 export const bootstrap = [reactLifecycles.bootstrap]
 export const mount = [randomPromise, reactLifecycles.mount]
