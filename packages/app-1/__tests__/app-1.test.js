@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const app1 = require('..');
+const app1 = require('..')
 
 describe('app-1', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})

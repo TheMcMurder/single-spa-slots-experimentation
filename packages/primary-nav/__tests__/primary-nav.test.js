@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const primaryNav = require('..');
+const primaryNav = require('..')
 
 describe('primary-nav', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})

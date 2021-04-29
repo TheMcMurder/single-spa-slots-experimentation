@@ -1,4 +1,6 @@
-const { createRollupConfig } = require(require.resolve('../../rollup.config.js'))
+const { createRollupConfig } = require(require.resolve(
+  '../../rollup.config.js',
+))
 
 const config = createRollupConfig({
   projectName: 'primary-nav',

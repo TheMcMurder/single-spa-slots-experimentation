@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import singleSpaReact from 'single-spa-react'
 
 function App2() {
-  return (<div>App2</div>)
+  return <div>App2</div>
 }
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: App2,
-  domElementGetter
+  domElementGetter,
 })
 
 function domElementGetter() {
