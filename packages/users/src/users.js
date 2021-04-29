@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import singleSpaReact from 'single-spa-react'
-
-function App1() {
-  return <div>App1</div>
-}
+import UsersRoot from './users-root.jsx'
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: App1,
+  rootComponent: UsersRoot,
   domElementGetter,
 })
 
