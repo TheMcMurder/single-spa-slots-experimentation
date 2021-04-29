@@ -1,4 +1,5 @@
 import { registerApplication, start } from 'single-spa'
+import bootstrapSPA from './bootstrap/bootstrapper.js'
 
 registerApplication(
   'primary-nav',
@@ -18,4 +19,6 @@ registerApplication(
   () => true,
 )
 
-start()
+bootstrapSPA().then(() => {
+  start()
+})
