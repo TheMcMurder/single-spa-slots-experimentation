@@ -1,5 +1,5 @@
 pre-commit:
   commands:
-    js:
+    format:
       glob: '*.{js,jsx}'
       run: prettier --write {staged_files} && git add {staged_files}
