@@ -5,10 +5,12 @@ import { Link } from '@reach/router'
 export default function NavigationBar() {
   return (
     <div
-      className={tw`relative bg-gray-100 top-0 border-b border-solid border-gray-200 flex`}
+      className={tw`h-10 bg-gray-300 top-0 border-b border-solid border-gray-200 flex`}
     >
-      Navigation Bar
-      <div>
+      <div className={tw`flex justify-around items-center flex-1`}>
+        <Link to="/">
+          Home
+        </Link>
         <Link to="/app-1" >
           App One
         </Link>
