@@ -12,6 +12,7 @@
   "scripts": {
     "start": "rollup -c -w",
     "build": "rimraf dist && rollup -c ./rollup.config.js --environment NODE_ENV:production",
+    "format": "prettier --write .",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
