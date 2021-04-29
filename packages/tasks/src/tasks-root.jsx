@@ -1,10 +1,10 @@
 import React from 'react'
 import { Router } from '@reach/router'
-import SecondaryNav from './secondary-nav/secondary-nav.jsx'
+import SecondaryNav from './tasks-secondary-nav/tasks-secondary-nav.jsx'
 export default function TasksRoot () {
   return <div>
-    <SecondaryNav />
-    <Router>
+    <Router basepath={`/tasks`}>
+      <SecondaryNav default/>
       <Tasks path='/all'></Tasks>
     </Router>
   </div>
