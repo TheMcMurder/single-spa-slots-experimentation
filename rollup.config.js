@@ -13,8 +13,8 @@ function createRollupConfig({ projectName, port }) {
   const liveReloadPorts = {
     'root-config': '35900',
     'primary-nav': '35888',
-    'app-1': '35886',
-    'app-2': '35887',
+    'users': '35886',
+    'tasks': '35887',
   }
   const outputPath = resolve(process.cwd(), `dist`)
   const production = !process.env.ROLLUP_WATCH
@@ -65,8 +65,8 @@ function createRollupConfig({ projectName, port }) {
         'lodash',
         'single-spa',
         'primary-nav',
-        'app-1',
-        'app-2',
+        'users',
+        'tasks',
         'root-config',
         'twind',
       ].includes(id) || /^jm_/.test(id),

@@ -2,21 +2,21 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import singleSpaReact from 'single-spa-react'
 
-function App2() {
-  return <div>App2</div>
+function App1() {
+  return <div>App1</div>
 }
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: App2,
+  rootComponent: App1,
   domElementGetter,
 })
 
 function domElementGetter() {
   const existingMain = document.querySelector('main')
   if (existingMain) {
-    return returnNodeIfExistsOrCreate('app-2', undefined, existingMain)
+    return returnNodeIfExistsOrCreate('users', undefined, existingMain)
   } else {
     throw new Error('cannot find existing main')
   }

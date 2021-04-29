@@ -8,15 +8,15 @@ registerApplication(
 )
 
 registerApplication(
-  'app-1',
-  () => System.import('app-1'),
-  (location) => location.pathname.startsWith('/app-1'),
+  'users',
+  () => System.import('users'),
+  (location) => location.pathname.startsWith('/users'),
 )
 
 registerApplication(
-  'app-2',
-  () => System.import('app-2'),
-  (location) => location.pathname.startsWith('/app-2'),
+  'tasks',
+  () => System.import('tasks'),
+  (location) => location.pathname.startsWith('/tasks'),
 )
 
 bootstrapSPA().then(() => {

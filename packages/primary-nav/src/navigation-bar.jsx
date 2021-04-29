@@ -11,11 +11,11 @@ export default function NavigationBar() {
         <Link to="/">
           Home
         </Link>
-        <Link to="/app-1" >
-          App One
+        <Link to="/users" >
+          Users
         </Link>
-        <Link to="/app-2" >
-          App 2
+        <Link to="/tasks" >
+          Tasks
         </Link>
       </div>
     </div>

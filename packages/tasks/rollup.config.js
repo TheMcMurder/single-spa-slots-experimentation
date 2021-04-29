@@ -8,7 +8,7 @@ const { createRollupConfig } = require(path.resolve(
 
 export default merge(
   createRollupConfig({
-    projectName: 'app-2',
+    projectName: 'tasks',
     port: '8887',
   }),
 )
