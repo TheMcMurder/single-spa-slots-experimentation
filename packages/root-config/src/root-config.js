@@ -6,4 +6,16 @@ registerApplication(
   () => true
 );
 
+registerApplication(
+  "app-1",
+  () => System.import("app-1"),
+  () => true
+);
+
+registerApplication(
+  "app-2",
+  () => System.import("app-2"),
+  () => true
+);
+
 start();
