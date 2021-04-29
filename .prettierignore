@@ -9,5 +9,7 @@ system/
 .kodiak.toml
 karma.conf.cjs
 .nvmrc
+package.json
+package-lock.json
 pnpm-lock.yaml
 lefthook.yaml
