@@ -10,13 +10,13 @@ registerApplication(
 registerApplication(
   'app-1',
   () => System.import('app-1'),
-  () => true,
+  (location) => location.pathname.startsWith('/app-1'),
 )
 
 registerApplication(
   'app-2',
   () => System.import('app-2'),
-  () => true,
+  (location) => location.pathname.startsWith('/app-2'),
 )
 
 bootstrapSPA().then(() => {
