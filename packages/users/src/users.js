@@ -34,7 +34,7 @@ function returnNodeIfExistsOrCreate(id, nodeType = 'div', parentNode) {
 function randomPromise() {
   return new Promise((r) => {
     setTimeout(() => {
-      console.log('Users mounting')
+      console.log('Users bootstrapping - random delay over')
       r()
     }, randomWait())
   })
@@ -45,6 +45,6 @@ function randomWait(min = 400, max = 1500) {
   return Math.floor(num)
 }
 
-export const bootstrap = [reactLifecycles.bootstrap]
-export const mount = [randomPromise, reactLifecycles.mount]
+export const bootstrap = [randomPromise, reactLifecycles.bootstrap]
+export const mount = [reactLifecycles.mount]
 export const unmount = [reactLifecycles.unmount]

@@ -1,25 +1,26 @@
 import React from 'react'
-import { Router } from '@reach/router'
+import { BrowserRouter, Route } from 'react-router-dom'
 import SecondaryNav from './tasks-secondary-nav/tasks-secondary-nav.jsx'
+import TaskList from './task-list/task-list.jsx'
 export default function TasksRoot() {
   return (
     <div>
-      <Router basepath={`/tasks`}>
-        <SecondaryNav default />
-        <Tasks path="/all"></Tasks>
-      </Router>
+      <BrowserRouter>
+        <SecondaryNav />
+        <Route path="/tasks/all">
+          <TaskList />
+        </Route>
+        <Route path="/tasks/settings">
+          <TaskSettings/>
+        </Route>
+        <Route path="/users/tasks/:userId">
+          <TaskList />
+        </Route>
+      </BrowserRouter>
     </div>
   )
 }
 
-const listOfTasks = [1, 2, 3, 4, 5]
-
-function Tasks() {
-  return (
-    <div>
-      {listOfTasks.map((task) => {
-        return <div key={task}>This is a task</div>
-      })}
-    </div>
-  )
+function TaskSettings () {
+  return (<div>TaskSettings</div>)
 }
