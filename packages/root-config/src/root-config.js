@@ -1,15 +1,12 @@
 import { registerApplication, start } from 'single-spa'
 
 registerApplication(
-  'primary-nav',
-  () => System.import('primary-nav'),
-  () => true,
+  'primary-nav', () => System.import('primary-nav'),() => true,
 )
 
 registerApplication(
   'app-1',
-  () => System.import('app-1'),
-  () => true,
+  () => System.import('app-1'), () => true,
 )
 
 registerApplication(

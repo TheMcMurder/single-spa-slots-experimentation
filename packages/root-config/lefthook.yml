@@ -1,5 +1,5 @@
 pre-commit:
   commands:
-    lint-fix:
+    js:
       glob: '*.{js,jsx}'
-      run: prettier {staged_files} && git add {staged_files}
+      run: cat {staged_files} && prettier --write {staged_files} && git add {staged_files}
