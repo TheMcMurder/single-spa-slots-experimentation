@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import singleSpaReact from 'single-spa-react'
-
-function PrimaryNav() {
-  return <div>Primary Navigation</div>
-}
+import Navigation from './navigation-bar.jsx'
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: PrimaryNav,
+  rootComponent: Navigation,
   domElementGetter,
 })
 
