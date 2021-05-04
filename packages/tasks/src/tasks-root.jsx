@@ -1,4 +1,5 @@
 import React from 'react'
+import { tw } from 'twind'
 import { BrowserRouter, Route } from 'react-router-dom'
 import SecondaryNav from './tasks-secondary-nav/tasks-secondary-nav.jsx'
 import TaskList from './task-list/task-list.jsx'
@@ -22,5 +23,5 @@ export default function TasksRoot() {
 }
 
 function TaskSettings() {
-  return <div>TaskSettings</div>
+  return <div className={tw`p-4`}>Task Settings would go here</div>
 }

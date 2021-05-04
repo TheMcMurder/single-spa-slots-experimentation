@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { tw } from 'twind'
 import React from 'react'
 import UserSecondaryNav from './user-secondary-nav/users-secondary-nav.jsx'
 export default function TasksRoot() {
@@ -15,5 +16,5 @@ export default function TasksRoot() {
 }
 
 function Settings() {
-  return <div>settings</div>
+  return <div className={tw`p-4`}>settings</div>
 }

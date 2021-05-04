@@ -8,6 +8,7 @@
     "build": "lerna run build --stream",
     "start": "lerna run start --stream",
     "format": "lerna run format --stream",
-    "kill": "npx kill-port 8888 8886 8887 9000 35886 35887 35888 35900"
+    "kill": "npx kill-port 8888 8886 8887 9000 35886 35887 35888 35900",
+    "setup": "lerna run bootstrap"
   }
 }

@@ -40,7 +40,7 @@ function randomPromise() {
   })
 }
 
-function randomWait(min = 400, max = 1500) {
+function randomWait(min = 400, max = 600) {
   let num = Math.random() * (max - min) + min
 
   return Math.floor(num)

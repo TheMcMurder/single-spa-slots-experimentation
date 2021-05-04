@@ -1,16 +1,13 @@
 import React from 'react'
+import { tw } from 'twind'
 import { useRouteMatch } from 'react-router-dom'
 
 export default function TaskList() {
   const match = useRouteMatch()
-  if (match && match.params && match.params.userId) {
-    return (
-      <div>
-        {match.params.userId}
-        tasks
-      </div>
-    )
-  } else {
-    return <div>all task list</div>
-  }
+  const userId = match && match.params && match.params.userId
+  return (
+    <div className={tw`p-4`}>
+      <h2>{userId ? userId : 'all'} tasks</h2>
+    </div>
+  )
 }
