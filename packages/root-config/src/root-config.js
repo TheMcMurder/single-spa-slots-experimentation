@@ -1,7 +1,7 @@
 import { registerApplication, start } from 'single-spa'
 import bootstrapSPA from './bootstrap/bootstrapper.js'
-import { fromEvent } from 'rxjs'
-import { tap, shareReplay } from 'rxjs/operators'
+// import { fromEvent } from 'rxjs'
+// import { tap, shareReplay } from 'rxjs/operators'
 
 registerApplication(
   'primary-nav',
