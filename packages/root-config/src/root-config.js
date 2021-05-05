@@ -1,7 +1,10 @@
 import { registerApplication, start } from 'single-spa'
 import bootstrapSPA from './bootstrap/bootstrapper.js'
+import { createSlot } from 'single-spa-slots'
 // import { fromEvent } from 'rxjs'
 // import { tap, shareReplay } from 'rxjs/operators'
+
+createSlot('secondary-nav', document.getElementById('secondary-nav'))
 
 registerApplication(
   'primary-nav',

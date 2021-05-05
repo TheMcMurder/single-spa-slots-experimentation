@@ -15,6 +15,7 @@ function createRollupConfig({ projectName, port }) {
     'primary-nav': '35888',
     'users': '35886',
     'tasks': '35887',
+    'single-spa-slots': '35901'
   }
   const outputPath = resolve(process.cwd(), `dist`)
   const production = !process.env.ROLLUP_WATCH
@@ -69,6 +70,7 @@ function createRollupConfig({ projectName, port }) {
         'tasks',
         'root-config',
         'twind',
+        'single-spa-slots',
       ].includes(id) || /^jm_/.test(id),
   }
 }

@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import SecondaryNav from './tasks-secondary-nav/tasks-secondary-nav.jsx'
 import TaskList from './task-list/task-list.jsx'
 export default function TasksRoot() {
+  console.log('tasks root')
   return (
     <div>
       <BrowserRouter>
