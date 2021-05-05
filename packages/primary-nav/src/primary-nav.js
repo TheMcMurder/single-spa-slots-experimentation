@@ -7,7 +7,7 @@ const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: Navigation,
-  domElementGetter,
+  // domElementGetter,
 })
 
 function domElementGetter() {

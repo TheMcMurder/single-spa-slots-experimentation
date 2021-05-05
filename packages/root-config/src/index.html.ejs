@@ -25,14 +25,32 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+  <template id="single-spa-layout">
+    <single-spa-router>
+      <nav class="main-nav">
+        <application name="primary-nav"></application>
+      </nav>
+      <main class="main-content">
+        <route path="tasks">
+          <application name="tasks"></application>
+        </route>
+        <route path="users">
+          <application name="users"></application>
+          <route path="/tasks/:id">
+            <application name="tasks"></application>
+          </route>
+        </route>
+      </main>
+    </single-spa-router>
+  </template>
 </head>
 <body>
   <script>
     System.import('root-config');
   </script>
-  <nav id='main-nav'></nav>
+  <!-- <nav id='main-nav'></nav>
   <main>
-  </main>
+  </main> -->
   <!-- <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full> -->
 </body>
 </html>

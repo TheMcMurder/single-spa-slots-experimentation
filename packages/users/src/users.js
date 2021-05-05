@@ -7,7 +7,7 @@ const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: UsersRoot,
-  domElementGetter,
+  // domElementGetter,
 })
 
 function domElementGetter() {
