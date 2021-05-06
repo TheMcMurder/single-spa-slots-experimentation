@@ -6,7 +6,7 @@ export default function TaskList() {
   const match = useRouteMatch()
   const userId = match && match.params && match.params.userId
   return (
-    <div className={tw`p-4`}>
+    <div className={tw`flex-1`}>
       <h2>{userId ? userId : 'all'} tasks</h2>
     </div>
   )
