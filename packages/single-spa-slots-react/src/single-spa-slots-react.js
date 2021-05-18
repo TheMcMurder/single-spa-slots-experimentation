@@ -17,15 +17,6 @@ export function Slot({ name, config = {}, children, ...other }) {
         {...other}
       ></Parcel>
     )
-    return reactDOM.createPortal(
-      <Parcel
-        appendTo={domNode}
-        mountParcel={mountRootParcel}
-        config={config}
-        {...other}
-      ></Parcel>,
-      domNode,
-    )
   } else {
     if (domNode) {
       return reactDOM.createPortal(children, domNode)
