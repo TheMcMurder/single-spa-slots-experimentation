@@ -1,5 +1,7 @@
 // This probably doesn't need to be it's own package. It doesn't do anything anymore.
 // maybe if this had some fallback stuff where it could help with rendering parcels but as of right now I don't see the point.
+//
+// All this is a map with getters/setters
 import { generateError } from './error-generate.js'
 
 const slots = {}
@@ -16,6 +18,7 @@ export function getNamedNode(name) {
 // expect a mapping of names to dom querySelectors
 export function createSlots(config = {}) {
   Object.entries(config).forEach(([key, value]) => {
+    // TODO a better way to handle this than just throwing an error
     if (slots[key]) {
       const error = generateError(`Slot by name of ${key} already exists`)
       throw error
