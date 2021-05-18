@@ -11,6 +11,7 @@ const parcelConfig = singleSpaReact({
   rootComponent: UsersSecondaryNav,
 })
 
+// Still using a parcel but it could easily just use a react component like `tasks-secondary-nav.jsx`
 export default function SecondaryNavSlotRenderer(props) {
   return <Slot name="secondary-nav" config={parcelConfig} {...props}></Slot>
 }
