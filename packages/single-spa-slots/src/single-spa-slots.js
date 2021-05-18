@@ -1,3 +1,5 @@
+// This probably doesn't need to be it's own package. It doesn't do anything anymore.
+// maybe if this had some fallback stuff where it could help with rendering parcels but as of right now I don't see the point.
 import { generateError } from './error-generate.js'
 
 const slots = {}
