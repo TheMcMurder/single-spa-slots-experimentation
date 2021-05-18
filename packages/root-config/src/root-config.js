@@ -1,10 +1,6 @@
 import { registerApplication, start } from 'single-spa'
 import bootstrapSPA from './bootstrap/bootstrapper.js'
-import { createSlot } from 'single-spa-slots'
-// import { fromEvent } from 'rxjs'
-// import { tap, shareReplay } from 'rxjs/operators'
-
-createSlot('secondary-nav', document.getElementById('secondary-nav'))
+import './create-slots.js'
 
 registerApplication(
   'primary-nav',
@@ -29,17 +25,3 @@ registerApplication(
 bootstrapSPA().then(() => {
   start()
 })
-
-// export const currentLocation$ = fromEvent(
-//   window,
-//   'single-spa:routing-event',
-// ).pipe(
-//   tap((event) => {
-//     console.log('event', event)
-//   }),
-//   shareReplay(1),
-// )
-
-// window.addEventListener('single-spa:routing-event', (event) => {
-//   console.log('old school', event)
-// })

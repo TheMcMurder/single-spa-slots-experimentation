@@ -13,9 +13,10 @@ function createRollupConfig({ projectName, port }) {
   const liveReloadPorts = {
     'root-config': '35900',
     'primary-nav': '35888',
-    'users': '35886',
-    'tasks': '35887',
-    'single-spa-slots': '35901'
+    users: '35886',
+    tasks: '35887',
+    'single-spa-slots': '35901',
+    'single-spa-slots-react': '35902',
   }
   const outputPath = resolve(process.cwd(), `dist`)
   const production = !process.env.ROLLUP_WATCH

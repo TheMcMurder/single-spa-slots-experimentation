@@ -1,27 +1,21 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { navigateToUrl } from 'single-spa'
 import singleSpaReact from 'single-spa-react'
-import { fillSlot } from 'single-spa-slots'
+import { Slot } from 'single-spa-slots-react'
 import { tw } from 'twind'
 
 const parcelConfig = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: UsersSecondaryNav
+  rootComponent: UsersSecondaryNav,
 })
 
 export default function SecondaryNavSlotRenderer(props) {
-  useEffect(() => {
-    const parcel = fillSlot('secondary-nav', parcelConfig, props)
-    return () => {
-      parcel.unmount()
-    }
-  }, [props])
-  return null
+  return <Slot name="secondary-nav" config={parcelConfig} {...props}></Slot>
 }
 
-function UsersSecondaryNav({dynamicColor}) {
+function UsersSecondaryNav({ dynamicColor }) {
   return (
     <div
       className={tw`flex h-20 bg-blue-${dynamicColor} justify-around items-center flex-1`}
@@ -32,8 +26,10 @@ function UsersSecondaryNav({dynamicColor}) {
   )
 }
 
-function Link ({to, children}) {
+function Link({ to, children }) {
   return (
-    <a href={to} onClick={navigateToUrl}>{children}</a>
+    <a href={to} onClick={navigateToUrl}>
+      {children}
+    </a>
   )
 }
